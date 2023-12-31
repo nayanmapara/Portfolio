@@ -72,8 +72,8 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className={styles.sectionSubText}>Get In Touch</p>
+        <h3 className={styles.sectionHeadText}>Say Hi 👋</h3>
 
         <form
           ref={formRef}
@@ -83,7 +83,7 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
-              type='text'
+              type='text' 
               name='name'
               value={form.name}
               onChange={handleChange}

@@ -3,10 +3,14 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
-import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import urlimg from "./url.png";
+
+import github from "./socials/github.png";
+import twitter from "./socials/twitter.png";
+import linkedin from "./socials/linkedin.png";
+import instagram from "./socials/instagram.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -21,6 +25,9 @@ import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import java from "./tech/java.png";
 import python from "./tech/python.png";
+import aws from "./tech/aws.png";
+import gcp from "./tech/gcp.png";
+import azure from "./tech/azure.png";
 
 import freelance from "./company/freelance.png";
 import postman from "./company/postman.png";
@@ -49,7 +56,7 @@ export {
   mongodb,
   nodejs,
   reactjs,
-  tailwind,
+  // tailwind,
   threejs,
   java,
   python,
@@ -59,4 +66,10 @@ export {
   tastypython,
   phishbuster,
   drivesync,
+  twitter,
+  linkedin,
+  instagram,
+  aws,
+  // gcp,
+  azure,
 };

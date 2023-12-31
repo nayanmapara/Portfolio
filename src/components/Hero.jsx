@@ -15,9 +15,9 @@ const Hero = () => {
         <div>
           <div className='flex flex-col items-start'>
             <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className="text-[#0feffd]">Nayan</span></h1> 
-            <p className={`${styles.heroSubText} mt-2 text-white-100`}>A Student +&nbsp;<br className="sm:block hidden" /><span className="text-[#0feffd]">
+            <p className={`${styles.heroSubText} mt-2 text-white-100`}>A Student +&nbsp;<br className="sm:block hidden" />
+            <span className="text-[#0feffd]">
             <Typewriter
-              className="text-[#0feffd]"
 
               options={{
                 strings: ['Full Stack Web Developer', 'Freelancer', 'Tech Enthusiast'],
@@ -26,7 +26,8 @@ const Hero = () => {
                 deleteSpeed: 50,
                 delay: 100,
               }}
-              /></span>
+              />
+              </span>
               </p>
               </div>
           </div>
