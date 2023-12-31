@@ -1,12 +1,27 @@
 import { Html, useProgress } from '@react-three/drei'
+import { trefoil } from 'ldrs'
+
 
 const Loader = () => {
   const { progress } = useProgress()
+  trefoil.register()
 
   return (
     <Html>
       {/* Loader style */}
       <span className="canvas-load"></span>
+
+      {/* Loader */}
+      <l-trefoil
+        size="50"
+        stroke="5"
+        stroke-length="0.15"
+        bg-opacity="0.1"
+        speed="1.4" 
+        color="cyan" 
+      ></l-trefoil>
+      
+      {/* Progress */}
       <p
         style={{
           fontSize: 14,
