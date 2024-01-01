@@ -21,9 +21,9 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-12 h-12 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            <span className="sm:block hidden">Nayan's &nbsp;</span>
-            Portfolio
+            <span className="sm:block hidden">Nayan &nbsp; Mapara</span>
           </p>
+          
         </Link>
         <div className="sm:flex items-center gap-4">
           <ul className="list-none hidden sm:flex flex-row gap-10">
