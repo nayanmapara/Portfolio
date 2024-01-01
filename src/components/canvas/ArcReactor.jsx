@@ -3,7 +3,6 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
-import { Light } from "three";
 
 const ArcReactor = () => {
   const arc = useGLTF("./arc_reactor/scene.gltf");
