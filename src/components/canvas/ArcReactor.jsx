@@ -31,6 +31,8 @@ const ArcReactorCanvas = () => {
       <directionalLight position={[5, 5, 5]} intensity={5} castShadow />
       <pointLight intensity={10} position={[0, 10, 0]} />
 
+      <pointLight intensity={5} position={[0, 0, 0]} color="cyan" />
+
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           autoRotate
