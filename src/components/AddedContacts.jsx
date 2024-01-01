@@ -13,8 +13,8 @@ const AddedContacts = () => {
       <div className="flex flex-col md:flex-row mt-8 gap-4">
 
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>Otherways To Connect</p>
-          <h2 className={styles.sectionHeadText}>Contact.</h2>
+          <p className={styles.sectionSubText}>Connect With Me</p>
+          <h2 className={styles.sectionHeadText}>Connect.</h2>
         </motion.div>
         </div>
 

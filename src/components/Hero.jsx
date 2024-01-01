@@ -7,13 +7,15 @@ import { ComputersCanvas } from './canvas';
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
+      <ComputersCanvas />
+
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7x1 mx-auto flex flex-row items-start gap-5`}>
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#0feffd]"/>
           <div className="w-1 sm:h-80 h-40 teal-gradient"/>
         </div>
         <div>
-          <div className='flex flex-col items-start'>
+          {/* <div className='flex flex-col items-start'>
             <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className="text-[#0feffd]">Nayan</span></h1> 
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>A Student +&nbsp;<br className="sm:block hidden" />
             <span className="text-[#0feffd]">
@@ -29,11 +31,26 @@ const Hero = () => {
               />
               </span>
               </p>
+              </div> */}
+
+            <div className='flex flex-col items-start'>
+              <p className={`${styles.heroSubText} mt-2 text-white-100`}> Welcome to my portfolio!</p>
+              <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm &nbsp;<br className="sm:block hidden" />
+              <span className="text-[#0feffd]">
+              <Typewriter
+
+                options={{
+                  strings: ['Nayan Mapara', 'a Full-Stack Developer', 'a Freelancer', 'a Tech Enthusiast'],
+                  autoStart: true,
+                  loop: true,
+                  deleteSpeed: 50,
+                  delay: 150,
+                }}
+                />
+                </span></h1> 
               </div>
           </div>
       </div>
-
-      <ComputersCanvas />
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">

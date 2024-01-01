@@ -97,7 +97,7 @@ const Works = () => {
 
     </div>
 
-    <div className={`text-center min-h-[100px]`}>
+    <div className={`text-center mt-10 min-h-[100px]`}>
       <button
         className="bg-tertiary text-secondary py-2 px-4 rounded-2xl"
         onClick={handleViewMoreClick}
