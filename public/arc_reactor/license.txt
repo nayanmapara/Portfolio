@@ -1,0 +1,11 @@
+Model Information:
+* title:	Arclight Reactor v3
+* source:	https://sketchfab.com/3d-models/arclight-reactor-v3-0e826ad87cf84681ac1f0df2b7ea88c3
+* author:	Cheshire (https://sketchfab.com/sqprojectsponsor)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Arclight Reactor v3" (https://sketchfab.com/3d-models/arclight-reactor-v3-0e826ad87cf84681ac1f0df2b7ea88c3) by Cheshire (https://sketchfab.com/sqprojectsponsor) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

@@ -11,8 +11,9 @@ const CustomCursor = () => {
       innerScale={0.7} // Set the inner circle scale
       outerScale={2} // Set the outer circle scale
       hasBlendMode={true} // Enable blending mode
+      showSystemCursor={true} // Enable system cursor
       innerStyle={{
-        backgroundColor: '#D7F4FF', // Set the inner circle background color
+        backgroundColor: '#00FFFF', // Set the inner circle background color
         mixBlendMode: 'difference', // Set the blend mode for the inner circle
       }}
       outerStyle={{
@@ -34,12 +35,12 @@ const CustomCursor = () => {
         {
           target: '.custom',
           options: {
-            innerSize: 12,
-            outerSize: 12,
-            color: '0, 255, 0',
-            outerAlpha: 0.6,
-            innerScale: 0.5,
-            outerScale: 3,
+            innerSize: 10,
+            outerSize: 50,
+            color: '0, 100, 100',
+            outerAlpha: 0.8,
+            innerScale: 0.7,
+            outerScale: 2,
           }
         }
       ]}
