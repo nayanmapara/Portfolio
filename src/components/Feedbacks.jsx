@@ -15,12 +15,13 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
     return text;
   };
 
-  const truncatedTestimonial = truncateText(testimonial, 30);
+  const truncatedTestimonial = truncateText(testimonial, 50);
 
   return (
+    // xs:w-[320px] -> To accomodate 3 cards in a row
     <motion.div
       variants={fadeIn('', 'spring', index * 0.5, 0.75)}
-      className="bg-black-300 p-10 rounded-3xl xs:w-[320px] w-full"
+      className="bg-black-300 p-10 rounded-3xl xs:w-[480px] w-full"
     >
       <p
         className="text-white tracking-wider font-black text-[48px]">"
@@ -68,7 +69,7 @@ const Feedbacks = () => {
           <h2 className={styles.sectionHeadText}>Testimonials.</h2>
         </motion.div>
       </div>
-      <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
+      <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7 justify-around`}>
         {testimonials.map((testimonial, index) => (
           <FeedbackCard
             key={testimonial.name}
