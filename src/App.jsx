@@ -10,7 +10,7 @@ const App = () => {
   return (
     <BrowserRouter>
 
-      <div className='sm:hidden'>
+      <div className='hidden sm:block'>
         <CustomCursor />
       </div>
     
