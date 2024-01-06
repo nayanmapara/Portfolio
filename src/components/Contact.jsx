@@ -33,8 +33,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_si7un7r",
-        "template_dlgs1fc",
+        import.meta.env.EMAILJS_SERVICE_ID,
+        import.meta.env.EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Nayan",
@@ -42,7 +42,7 @@ const Contact = () => {
           to_email: "contact@nayanm.me",
           message: form.message,
         },
-        "BpUxBS5d5OcBnfYGQ"
+        import.meta.env.EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
