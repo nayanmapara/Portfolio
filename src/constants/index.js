@@ -1,8 +1,8 @@
 import { t } from "maath/dist/misc-19a3ec46.esm";
 import {
     mobile,
-    backend,
-    creator,
+    uiux,
+    cloud,
     web,
     javascript,
     html,
@@ -85,11 +85,11 @@ import {
     },
     {
       title: "UI/UX Designer",
-      icon: backend,
+      icon: uiux,
     },
     {
       title: "Cloud Solutions Engineer",
-      icon: creator,
+      icon: cloud,
     },
   ];
   
@@ -187,6 +187,15 @@ import {
   ];
   
   const testimonials = [
+    {
+      testimonial:
+        "Nayan Mapara is highly knowlegeble about the web. He skillfully made a very good and highly secure website website for my Computer Science education platform TastyPython. It was done within a few days and the website had more features than I could imagine. Nayan's style of work is unique, he will not bother you for small details about the website along the course of development, but ask all questions together initially and at a later stage. This ensures that you arent being bothered too much all the time, and the work is still on. Nayan was kind enough to not only make the website for me, but also taught me how to make a personal blog with a free domain! He ensures that all your doubts are clear, and the website was easy to operate post development.",
+      name: "Tejas Kannampuzha",
+      designation: "Founder",
+      company: "TastyPython",
+      image: "https://media.licdn.com/dms/image/D4E03AQHi9et0L37ZUw/profile-displayphoto-shrink_800_800/0/1700214560823?e=1709164800&v=beta&t=CDllnxRuPmWILiOp3zhTutl8ffqyn0BX5qVMTAIu-EY",
+      url: "https://www.linkedin.com/in/tejas-kannampuzha-141214261/",
+    },
     {
       testimonial:
         "Nayan Mapara is highly knowlegeble about the web. He skillfully made a very good and highly secure website website for my Computer Science education platform TastyPython. It was done within a few days and the website had more features than I could imagine. Nayan's style of work is unique, he will not bother you for small details about the website along the course of development, but ask all questions together initially and at a later stage. This ensures that you arent being bothered too much all the time, and the work is still on. Nayan was kind enough to not only make the website for me, but also taught me how to make a personal blog with a free domain! He ensures that all your doubts are clear, and the website was easy to operate post development.",

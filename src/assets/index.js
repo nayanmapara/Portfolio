@@ -1,17 +1,21 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import urlimg from "./url.png";
 
+// Roles
+import uiux from "./roles/uiux.png";
+import cloud from "./roles/cloud.png";
+import mobile from "./roles/mobile.png";
+import web from "./roles/web.png";
+
+// Socials
 import github from "./socials/github.png";
 import twitter from "./socials/twitter.png";
 import linkedin from "./socials/linkedin.png";
 import instagram from "./socials/instagram.png";
 
+// Tech
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -29,18 +33,20 @@ import aws from "./tech/aws.png";
 import gcp from "./tech/gcp.png";
 import azure from "./tech/azure.png";
 
+// Company
 import freelance from "./company/freelance.png";
 import postman from "./company/postman.png";
 import qmark from "./company/qmark.png";
 
+// Projects
 import tastypython from "./projects/tastypython.png";
 import phishbuster from "./projects/phishbuster.png";
 import drivesync from "./projects/drivesync.png";
 
 export {
   logo,
-  backend,
-  creator,
+  uiux,
+  cloud,
   mobile,
   web,
   github,
