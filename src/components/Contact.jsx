@@ -31,10 +31,14 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID || import.meta.env.EMAILJS_SERVICE_ID;
+    const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID || import.meta.env.EMAILJS_TEMPLATE_ID;
+    const EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY || import.meta.env.EMAILJS_PUBLIC_KEY;
+
     emailjs
       .send(
-        import.meta.env.EMAILJS_SERVICE_ID,
-        import.meta.env.EMAILJS_TEMPLATE_ID,
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Nayan",
@@ -42,7 +46,7 @@ const Contact = () => {
           to_email: "contact@nayanm.me",
           message: form.message,
         },
-        import.meta.env.EMAILJS_PUBLIC_KEY
+        EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
