@@ -48,7 +48,7 @@ const Tech = () => {
         </motion.div>
       <div className="mt-10">
         <div className="flex flex-row flex-wrap justify-center gap-2">
-          <Accordion sx={ accordionStyle }>
+          <Accordion defaultExpanded sx={ accordionStyle }>
             <AccordionSummary expandIcon={<ExpandMoreIcon sx={ accordionStyle } />} aria-controls="backend-content" id="backend-header">
               Backend Technologies
             </AccordionSummary>
