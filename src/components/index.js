@@ -1,4 +1,4 @@
-import { ArcReactorCanvas, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas';
+import { ArcReactorCanvas, ComputersCanvas, StarsCanvas } from './canvas';
 import Hero from './Hero';
 import Navbar from './Navbar';
 import About from './About';
@@ -18,8 +18,7 @@ export {
   Works,
   Feedbacks,
   Contact,
-  ArcReactorCanvas,
-  BallCanvas, 
+  ArcReactorCanvas, 
   ComputersCanvas, 
   StarsCanvas,
   CustomCursor
