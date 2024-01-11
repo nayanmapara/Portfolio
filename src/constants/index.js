@@ -1,4 +1,4 @@
-import { t } from "maath/dist/misc-19a3ec46.esm";
+import { h, t } from "maath/dist/misc-19a3ec46.esm";
 import {
     mobile,
     uiux,
@@ -8,7 +8,7 @@ import {
     html,
     css,
     reactjs,
-    // tailwind,
+    tailwind,
     nodejs,
     mongodb,
     git,
@@ -30,7 +30,26 @@ import {
     aws,
     // gcp,
     azure,
+    heroku,
+    clang,
+    csharp,
+    mysql,
+    angular,
+    bootstrap,
+    adobexd,
+    jira,
+    linux,
+    windows,
+    devops,
+    agile,
+    scrum,
+    restapi,
+    microservices,
+    prototyping,
+    cms,
   } from "../assets";
+
+import { a } from "maath/dist/objectSpread2-284232a6.esm";
   
   export const navLinks = [
     {
@@ -146,19 +165,160 @@ import {
       name: "docker",
       icon: docker,
     },
+    {
+      name: "AWS",
+      icon: aws,
+    },
     // {
-    //   name: "AWS",
-    //   icon: aws,
+    //   name: "GCP",
+    //   icon: gcp,
     // },
-    // // {
-    // //   name: "GCP",
-    // //   icon: gcp,
-    // // },
-    // {
-    //   name: "Azure",
-    //   icon: azure,
-    // },
+    {
+      name: "Azure",
+      icon: azure,
+    },
   ];
+
+  const backendTech = [
+    {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "Java",
+      icon: java,
+    },
+    {
+      name: "Node.js",
+      icon: nodejs,
+    },
+    {
+      name: "C",
+      icon: clang
+    },
+    {
+      name: "C#",
+      icon: csharp
+    },
+    {
+      name: "MySQL",
+      icon: mysql
+    },
+    {
+      name: "MongoDB",
+      icon: mongodb
+    },
+    {
+      name: "Amazon Web Services",
+      icon: aws
+    },
+    {
+      name: "Azure",
+      icon: azure
+    },
+    {
+      name: "Heroku",
+      icon: heroku
+    }
+  ]
+
+  const frontendTech = [
+    {
+      name: "HTML",
+      icon: html,
+    },
+    {
+      name: "CSS",
+      icon: css,
+    },
+    {
+      name: "JavaScript",
+      icon: javascript,
+    },
+    {
+      name: "React.js",
+      icon: reactjs,
+    },
+    {
+      name: "Angular",
+      icon: angular
+    },
+    {
+      name: "Tailwind CSS",
+      icon: tailwind
+    },
+    {
+      name: "Bootstrap",
+      icon: bootstrap
+    },
+    {
+      name: "Figma",
+      icon: figma
+    },
+    {
+      name: "Adobe XD",
+      icon: adobexd
+    },
+  ]
+
+  const otherTech = [
+  {
+    name: "Git",
+    icon: git
+  },
+  {
+    name: "GitHub",
+    icon: github
+  },
+  {
+    name: "Jira",
+    icon: jira
+  },
+  {
+    name: "Postman",
+    icon: postman
+  },
+  {
+    name: "Docker",
+    icon: docker
+  },
+  {
+    name: "Linux",
+    icon: linux
+  },
+  {
+    name: "Windows",
+    icon: windows
+  },
+  {
+    name: "DevOps",
+    icon: devops
+  },
+  {
+    name: "Agile",
+    icon: agile
+  },
+  {
+    name: "Scrum",
+    icon: scrum
+  },
+  {
+    name: "Designing Restful APIs",
+    icon: restapi
+  },
+  {
+    name: "Microservices",
+    icon: microservices
+  },
+  {
+    name: "UI Prototyping",
+    icon: prototyping
+  },
+  {
+    name: "CMS (WordPress, Wix)",
+    icon: cms
+  }
+  ]
   
   const experiences = [
     {
@@ -277,4 +437,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, projects, backendTech, frontendTech, otherTech };

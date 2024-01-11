@@ -32,6 +32,23 @@ import python from "./tech/python.png";
 import aws from "./tech/aws.png";
 import gcp from "./tech/gcp.png";
 import azure from "./tech/azure.png";
+import heroku from "./tech/heroku.png";
+import clang from "./tech/clang.png";
+import csharp from "./tech/csharp.png";
+import mysql from "./tech/mysql.png";
+import angular from "./tech/angular.png";
+import bootstrap from "./tech/bootstrap.png";
+import adobexd from "./tech/adobexd.png";
+import jira from "./tech/jira.png";
+import linux from "./tech/linux.png";
+import windows from "./tech/windows.png";
+import devops from "./tech/devops.png";
+import agile from "./tech/agile.png";
+import scrum from "./tech/scrum.png";
+import restapi from "./tech/restapi.png";
+import microservices from "./tech/microservices.png";
+import prototyping from "./tech/prototyping.png";
+import cms from "./tech/cms.png";
 
 // Company
 import freelance from "./company/freelance.png";
@@ -62,7 +79,7 @@ export {
   mongodb,
   nodejs,
   reactjs,
-  // tailwind,
+  tailwind,
   threejs,
   java,
   python,
@@ -76,6 +93,23 @@ export {
   linkedin,
   instagram,
   aws,
-  // gcp,
+  gcp,
   azure,
+  heroku,
+  clang,
+  csharp,
+  mysql,
+  angular,
+  bootstrap,
+  adobexd,
+  jira,
+  linux,
+  windows,
+  devops,
+  agile,
+  scrum,
+  restapi,
+  microservices,
+  prototyping,
+  cms,
 };
