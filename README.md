@@ -1,8 +1,15 @@
-# React + Vite
+# Nayan's Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio website, [nayanm.me](https://nayanm.me)! This is a showcase of my skills, projects, and experiences. Feel free to explore and get to know more about me.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React JS**: The website is built using React JS, a popular JavaScript library for building user interfaces. This choice provides a dynamic and efficient experience for visitors.
+
+- **Three JS**: Three JS is utilized to incorporate 3D elements and animations, adding a visually appealing dimension to the website.
+
+- **Tailwind CSS**: Tailwind CSS is employed for styling, making it easier to create a responsive and sleek design. The utility-first approach of Tailwind CSS enhances the development process.
+
+## Contributing
+
+If you find any issues, have suggestions, or want to contribute to the project, feel free to open an issue or submit a pull request. Your contributions are highly appreciated!
