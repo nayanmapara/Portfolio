@@ -73,38 +73,38 @@ const Works = () => {
 
   return (
     <>
-    <motion.div variants={textVariant()}>
-      <p className={`${styles.sectionSubText}`}>My work</p>
-      <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
-    </motion.div>
+      <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText}`}>My work</p>
+        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+      </motion.div>
 
-    <div className="w-full flex">
-      <motion.p
-        variants={fadeIn("","", 0.1, 1)}
-        className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-      The projects showcased below capture my journey in tech. Each project is a canvas where creativity meets functionality, highlighting my commitment to pushing boundaries and delivering impactful solutions. Explore the details of these digital ventures, each adding a unique stroke to my technological narrative.
-      </motion.p>
-    </div>
+      <div className="w-full flex">
+        <motion.p
+          variants={fadeIn("","", 0.1, 1)}
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        >
+        The projects showcased below capture my journey in tech. Each project is a canvas where creativity meets functionality, highlighting my commitment to pushing boundaries and delivering impactful solutions. Explore the details of these digital ventures, each adding a unique stroke to my technological narrative.
+        </motion.p>
+      </div>
 
-    <div className="mt-20 flex flex-wrap gap-7">
-      {projects.map((project, index) => (
-        <ProjectCard key={`project-${index}`}
-          index={index}
-          {...project}
-        />  
-      ))}
+      <div className="mt-20 flex flex-wrap gap-7">
+        {projects.map((project, index) => (
+          <ProjectCard key={`project-${index}`}
+            index={index}
+            {...project}
+          />  
+        ))}
 
-    </div>
+      </div>
 
-    <div className={`text-center mt-10 min-h-[100px]`}>
-      <button
-        className="bg-tertiary text-secondary py-2 px-4 rounded-2xl"
-        onClick={handleViewMoreClick}
-      >
-        View More on GitHub
-      </button>
-    </div>
+      <div className={`text-center mt-10 min-h-[100px]`}>
+        <button
+          className="bg-tertiary text-secondary py-2 px-4 rounded-2xl"
+          onClick={handleViewMoreClick}
+        >
+          View More on GitHub
+        </button>
+      </div>
     </>
   )
 }

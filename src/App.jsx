@@ -4,6 +4,7 @@ import { About, Contact, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Tech,
 import AddedContacts from './components/AddedContacts';
 
 import CustomCursor from './components/CustomCursor';
+import { SpeedDial } from '@mui/material';
 
 const App = () => {
 

@@ -1,4 +1,3 @@
-import { h, t } from "maath/dist/misc-19a3ec46.esm";
 import {
     mobile,
     uiux,
@@ -18,10 +17,11 @@ import {
     python,
     freelance,
     postman,
+    sheridancollege,
     // qmark,
     tastypython,
     phishbuster,
-    drivesync,
+    signease,
     threejs,
     github,
     linkedin,
@@ -48,8 +48,6 @@ import {
     prototyping,
     cms,
   } from "../assets";
-
-import { a } from "maath/dist/objectSpread2-284232a6.esm";
   
   export const navLinks = [
     {
@@ -107,7 +105,7 @@ import { a } from "maath/dist/objectSpread2-284232a6.esm";
       icon: uiux,
     },
     {
-      title: "Cloud Solutions Engineer",
+      title: "Cloud Analyst",
       icon: cloud,
     },
   ];
@@ -255,6 +253,30 @@ import { a } from "maath/dist/objectSpread2-284232a6.esm";
   
   const experiences = [
     {
+      title: "Honours Bachelor of Computer Science (Specialty in Cloud Computing)",
+      company_name: "Sheridan College",
+      icon: sheridancollege,
+      iconBg: "#193a67",
+      date: "Sep 2024 - Apr 2027",
+      points: [
+        "Cloud Solutions Specialist: Analyzes, strategies, designs, and executes computer systems and cloud solutions.","Specializes in AWS and Azure for scalable and efficient cloud architectures.",
+      ],
+      type: 2,
+    },
+    {
+      title: "Computer Programming Diploma",
+      company_name: "Sheridan College",
+      icon: sheridancollege,
+      iconBg: "#193a67",
+      date: "Jan 2023 - Apr 2024",
+      points: [
+        "Full-stack Expertise: Proficient in Java, C, and C# for robust software and networking. Skilled in Spring Boot, PHP, and Angular, ensuring comprehensive full-stack development.",
+        "Agile Project Management: Experience in Agile and Waterfall methodologies. Efficiently uses Jira for project management, ensuring adaptability to evolving software development lifecycles.",
+        "Collaborative Problem-solver: Adept at using tools like Jira for collaborative problem-solving.",
+      ],
+      type: 2,
+    },
+    {
       title: "Student Leader",
       company_name: "Postman",
       icon: postman,
@@ -264,6 +286,7 @@ import { a } from "maath/dist/objectSpread2-284232a6.esm";
         "Facilitating educational workshops to demystify APIs, providing students with the skills to create resilient and innovative software solutions.",
         "Conducting informative sessions on API intricacies, empowering students to master the art of leveraging APIs in software development.",
       ],
+      type: 1,
     },
     {
       title: "Full-Stack Developer",
@@ -276,6 +299,7 @@ import { a } from "maath/dist/objectSpread2-284232a6.esm";
         "Expertise in the complete web dev lifecycle, from conceptualization to deployment.",
         "Skillful execution of client-centric digital marketing strategies to attract and acquire new clients.",
       ],
+      type: 1,
     },
   ];
   
@@ -295,12 +319,34 @@ import { a } from "maath/dist/objectSpread2-284232a6.esm";
       name: "Payal Lenka",
       designation: "Student",
       company: "RNS Institute of Technology",
-      image: "https://media.licdn.com/dms/image/D5603AQEziydtbNkTcg/profile-displayphoto-shrink_400_400/0/1701026281250?e=1709769600&v=beta&t=Zz_HaiMMQ1QVrzE_QqW7nLoRzkNOqAjeRMiNkISkJfI",
+      image: "https://media.licdn.com/dms/image/D5603AQEziydtbNkTcg/profile-displayphoto-shrink_800_800/0/1701026281250?e=1715817600&v=beta&t=7mu_g3BaUJd2YA9CfZLOn4HJoliCp8qu-NVWGs_sU9g",
       url: "https://www.linkedin.com/in/payal-lenka/",
     },
   ];
   
   const projects = [
+    {
+      name: "SignEase (Winner at DeerHacks III)",
+      description:
+        "A React web application aimed at dismantling communication barriers teaches sign language through interactive and accessible methods. We utilized a MongoDB and Flask backend to efficiently store search histories, while a dedicated Python script handled the storage of coordinate data for dynamic 3D hand animations. With the integration of Mediapipe for accurate hand tracking and Three.js to render these animations in our frontend.",
+      tags: [
+        {
+          name: "python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "reactjs",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "threejs",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: signease,
+      source_code_link: "https://github.com/DeerHacks2024",
+      demo_code_link: "https://devpost.com/software/signease-dmx6er",
+    },
     {
       name: "TastyPython",
       description:
@@ -322,28 +368,6 @@ import { a } from "maath/dist/objectSpread2-284232a6.esm";
       image: tastypython,
       source_code_link: "https://tastypython.tech/",
       demo_code_link: "https://tastypython.tech/",
-    },
-    {
-      name: "DriveSync",
-      description:
-        "The DriveSync project aims to create a Car Rating App enabling users to review and rate cars from 2023 and beyond. The application offers users the ability to browse and access detailed information about various car models, including ratings, prices, and specifications.",
-      tags: [
-        {
-          name: "java",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "javafx",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "git",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: drivesync,
-      source_code_link: "https://github.com/nayanmapara/DriveSync",
-      demo_code_link: "https://github.com/nayanmapara/DriveSync?tab=readme-ov-file#project-images",
     },
     {
       name: "PhishBuster",

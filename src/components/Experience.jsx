@@ -1,8 +1,9 @@
+import { useState } from "react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-
+import { Tab, Tabs } from "@mui/material";
+// import { useTheme } from '@mui/material/styles';
 import 'react-vertical-timeline-component/style.min.css';
-
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -41,22 +42,58 @@ const ExperienceCard = ({ experience }) => (
 )
 
 const Experience = () => {
+  const [tabIndex, setTabIndex] = useState(0);
+
+  const handleTabChange = (event, newValue) => {
+    setTabIndex(newValue);
+  };
+
   return (
     <>
     <motion.div variants={textVariant()}>
       <p className={`${styles.sectionSubText}`}>What I have done so far</p>
       <h2 className={`${styles.sectionHeadText}`}>My Experience</h2>
+
+    <Tabs
+      value={tabIndex}
+      onChange={handleTabChange}
+      variant="standard"
+      aria-label="Experience tabs"
+      className="mt-4"
+      centered
+
+      sx={{
+        '& .MuiTabs-indicator': {
+          backgroundColor: "#00FFFF", // Change the color of the indicator line
+        },
+        
+      }}
+
+      textColor="#D7F4FF"
+      // indicatorColor="#D7F4FF"
+      
+
+
+    >
+      <Tab label="All" />
+      <Tab label="Work" />
+      <Tab label="Education" />
+    </Tabs>
+
     </motion.div>
 
-    <div className="mt-20 flex flex-col">
+    <div className="mt-4">
       <VerticalTimeline>
-        {experiences.map((experience, index) => (
-          <ExperienceCard key={index} experience={experience} />
-          ))}
+        {experiences.map((experience, index) => {
+          if (tabIndex === 0 || experience.type === tabIndex) {
+            return <ExperienceCard key={index} experience={experience} />;
+          }
+          return null;
+        })}
       </VerticalTimeline>
     </div>
     </>
   )
 }
 
-export default SectionWrapper(Experience, "work")
+export default SectionWrapper(Experience, "work");

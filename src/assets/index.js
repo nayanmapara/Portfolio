@@ -53,12 +53,13 @@ import cms from "./tech/cms.png";
 // Company
 import freelance from "./company/freelance.png";
 import postman from "./company/postman.png";
+import sheridancollege from "./company/sheridancollege.png";
 import qmark from "./company/qmark.png";
 
 // Projects
 import tastypython from "./projects/tastypython.png";
 import phishbuster from "./projects/phishbuster.png";
-import drivesync from "./projects/drivesync.png";
+import signease from "./projects/signease.png";
 
 export {
   logo,
@@ -85,10 +86,11 @@ export {
   python,
   freelance,
   postman,
+  sheridancollege,
   qmark,
   tastypython,
   phishbuster,
-  drivesync,
+  signease,
   twitter,
   linkedin,
   instagram,
