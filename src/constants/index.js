@@ -1,6 +1,6 @@
 import {
     mobile,
-    uiux,
+    // uiux,
     cloud,
     web,
     javascript,
@@ -22,7 +22,7 @@ import {
     tastypython,
     phishbuster,
     signease,
-    threejs,
+    // threejs,
     github,
     linkedin,
     twitter,
@@ -47,6 +47,7 @@ import {
     microservices,
     prototyping,
     cms,
+    // devops,
   } from "../assets";
   
   export const navLinks = [
@@ -101,8 +102,8 @@ import {
       icon: mobile,
     },
     {
-      title: "UI/UX Designer",
-      icon: uiux,
+      title: "DevOps Engineer",
+      icon: devops,
     },
     {
       title: "Cloud Analyst",
