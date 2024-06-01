@@ -35,9 +35,9 @@ const Contact = () => {
     // const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID || import.meta.env.EMAILJS_TEMPLATE_ID;
     // const EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY || import.meta.env.EMAILJS_PUBLIC_KEY;
 
-    const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID;
-    const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID;
-    const EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY;
+    const EMAILJS_SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const EMAILJS_TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const EMAILJS_PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
 
     emailjs
@@ -83,7 +83,7 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get In Touch</p>
         <h3 className={styles.sectionHeadText}>Say Hi 👋</h3>
-        <p>{process.env.CHECK}</p>
+        <p>{process.env.REACT_APP_CHECK}</p>
 
         <form
           ref={formRef}
