@@ -47,7 +47,8 @@ import {
     microservices,
     prototyping,
     cms,
-    // devops,
+    Payal,
+    Tejas,
   } from "../assets";
   
   export const navLinks = [
@@ -311,7 +312,7 @@ import {
       name: "Tejas Kannampuzha",
       designation: "Founder",
       company: "TastyPython",
-      image: "https://media.licdn.com/dms/image/D4E03AQHi9et0L37ZUw/profile-displayphoto-shrink_800_800/0/1700214560823?e=1709164800&v=beta&t=CDllnxRuPmWILiOp3zhTutl8ffqyn0BX5qVMTAIu-EY",
+      image: Tejas,
       url: "https://www.linkedin.com/in/tejas-kannampuzha-141214261/",
     },
     {
@@ -320,7 +321,7 @@ import {
       name: "Payal Lenka",
       designation: "Student",
       company: "RNS Institute of Technology",
-      image: "https://media.licdn.com/dms/image/D5603AQEziydtbNkTcg/profile-displayphoto-shrink_800_800/0/1701026281250?e=1715817600&v=beta&t=7mu_g3BaUJd2YA9CfZLOn4HJoliCp8qu-NVWGs_sU9g",
+      image: Payal,
       url: "https://www.linkedin.com/in/payal-lenka/",
     },
   ];

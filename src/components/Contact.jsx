@@ -83,6 +83,7 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get In Touch</p>
         <h3 className={styles.sectionHeadText}>Say Hi 👋</h3>
+        <p>{process.env.CHECK}</p>
 
         <form
           ref={formRef}

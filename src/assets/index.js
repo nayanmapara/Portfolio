@@ -61,6 +61,10 @@ import tastypython from "./projects/tastypython.png";
 import phishbuster from "./projects/phishbuster.png";
 import signease from "./projects/signease.png";
 
+// Profile Images
+import Payal from "./profile/Payal_Lenka.jpg";
+import Tejas from "./profile/Tejas_Kannampuzha.jpg";
+
 export {
   logo,
   uiux,
@@ -114,4 +118,7 @@ export {
   microservices,
   prototyping,
   cms,
+
+  Payal,
+  Tejas,
 };
