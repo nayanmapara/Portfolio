@@ -52,6 +52,9 @@ import {
     headstarter,
     northernwhisper,
     UoH,
+    drivesync,
+    whisperbackend,
+    squad,
   } from "../assets";
   
   export const navLinks = [
@@ -98,21 +101,22 @@ import {
   
   const services = [
     {
-      title: "Full-Stack Developer",
+      title: "CS & Cloud Computing Student",
+      icon: cloud,
+    },
+    {
+      title: "Headstarter AI Fellow",
+      icon: headstarter,
+    },
+    {
+      title: "1x Hackathon Winner",
       icon: web,
     },
     {
-      title: "Software Developer",
+      title: "Freelance Developer",
       icon: mobile,
     },
-    {
-      title: "DevOps Engineer",
-      icon: devops,
-    },
-    {
-      title: "Cloud Analyst",
-      icon: cloud,
-    },
+    
   ];
 
   const backendTech = [
@@ -370,7 +374,7 @@ import {
     {
       name: "SignEase (Winner at DeerHacks III)",
       description:
-        "A React web application aimed at dismantling communication barriers teaches sign language through interactive and accessible methods. We utilized a MongoDB and Flask backend to efficiently store search histories, while a dedicated Python script handled the storage of coordinate data for dynamic 3D hand animations. With the integration of Mediapipe for accurate hand tracking and Three.js to render these animations in our frontend.",
+        "A dynamic web app for mastering sign language, using Python-based Hand Detection, Mediapipe for accurate tracking, and Three.js for 3D visualization. It features a MongoDB and Flask backend for storing search histories and coordinate data for 3D hand animations.",
       tags: [
         {
           name: "python",
@@ -390,9 +394,53 @@ import {
       demo_code_link: "https://devpost.com/software/signease-dmx6er",
     },
     {
+      name: "WhisperBackend",
+      description:
+        "Developed a scalable backend service for web scraping and user subscription management using Python, Flask, and MongoDB. Containerized with Docker and deployed on Vercel, this project ensures efficient handling of large volumes of data.",
+      tags: [
+        {
+          name: "python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "flask",
+          color: "green-text-gradient",
+        },
+        {
+          name: "docker",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: whisperbackend,
+      source_code_link: "https://github.com/nayanmapara/WhisperBackend",
+      demo_code_link: "https://github.com/nayanmapara/WhisperBackend",
+    },
+    {
+      name: "Drive Sync - Car Rating App",
+      description:
+        "The Drive Sync project aims to create a Car Rating App enabling users to review and rate cars from 2023 and beyond. The application offers users the ability to browse and access detailed information about various car models, including ratings, prices, and specifications.",
+      tags: [
+        {
+          name: "java",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "javafx",
+          color: "green-text-gradient",
+        },
+        {
+          name: "fileio",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: drivesync,
+      source_code_link: "https://github.com/nayanmapara/DriveSync",
+      demo_code_link: "https://github.com/nayanmapara/DriveSync",
+    },
+    {
       name: "TastyPython",
       description:
-        "Embark on a flavorful adventure in the world of Python programming with TastyPython.tech, a dynamic website meticulously crafted using WordPress and PHP. As the proud creator of this engaging platform, I've blended the power of these technologies to deliver an immersive and accessible learning experience for aspiring Python enthusiasts.",
+        "Embark on a flavorful Python programming adventure with TastyPython.tech, a dynamic website crafted using WordPress and PHP. This platform delivers an immersive learning experience for aspiring Python enthusiasts.",
       tags: [
         {
           name: "wordpress",
@@ -414,7 +462,7 @@ import {
     {
       name: "PhishBuster",
       description:
-        "PhishBuster is a powerful open-source tool designed to combat the rising threat of phishing attacks. The aim of PhishBuster is to empower users to identify and report potential phishing sites, contributing to a collective defense against online threats.",
+        "Created a user-friendly Phishing Detection Tool with a custom PhishBuster API integration for tailored solutions. Demonstrated full-stack proficiency using Python, Web Development, MySQL, Docker, Flask, and deployed on Heroku.",
       tags: [
         {
           name: "python",
@@ -428,12 +476,34 @@ import {
           name: "restapi",
           color: "green-text-gradient",
         },
-        
       ],
       image: phishbuster,
       source_code_link: "https://github.com/nayanmapara/PhishBuster",
       demo_code_link: "https://github.com/nayanmapara/PhishBuster?tab=readme-ov-file#sites",
     },
+    {
+      name: "Squad! - Building Bridges for Newcomers",
+      description:
+        "Squad! emerges as an intuitive iOS app, specifically cultivated for newcomers in Canada, focusing on their crucial initial five years – a period akin to the rooting phase in a new environment.",
+      tags: [
+        {
+          name: "swift",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "python",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "green-text-gradient",
+        }
+      ],
+      image: squad,
+      source_code_link: "https://devpost.com/software/squad-building-bridges-for-newcomers",
+      demo_code_link: "https://devpost.com/software/squad-building-bridges-for-newcomers",
+    },
   ];
+
   
   export { services, experiences, testimonials, projects, backendTech, frontendTech, otherTech };

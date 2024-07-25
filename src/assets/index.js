@@ -63,6 +63,9 @@ import headstarter from "./company/headstarter.png";
 import tastypython from "./projects/tastypython.png";
 import phishbuster from "./projects/phishbuster.png";
 import signease from "./projects/signease.png";
+import squad from "./projects/squad.png";
+import whisperbackend from "./projects/whisperbackend.png";
+import drivesync from "./projects/drivesync.png";
 
 // Profile Images
 import Payal from "./profile/Payal_Lenka.jpg";
@@ -98,6 +101,9 @@ export {
   tastypython,
   phishbuster,
   signease,
+  squad,
+  whisperbackend,
+  drivesync,
   twitter,
   linkedin,
   instagram,

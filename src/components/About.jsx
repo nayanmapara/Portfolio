@@ -38,7 +38,7 @@ const About = () => {
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} 
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-          Enthusiastically exploring the tech landscape, I'm a 2nd-year Computer Systems Engineering student at Sheridan College. From cybersecurity to cloud computing, my journey embraces a multidisciplinary approach. With a rapid learning pace and keen attention to detail, I'm dedicated to pushing innovation boundaries. Join me in exploring possibilities at the forefront of technology!
+          Enthusiastically exploring the tech landscape, I'm a 2nd-year Computer Science student specializing in Cloud Computing at Sheridan College. From cybersecurity to cloud solutions, my journey embraces a multidisciplinary approach. With a rapid learning pace and keen attention to detail, I’m dedicated to pushing innovation boundaries. Join me in exploring possibilities at the forefront of technology!
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
