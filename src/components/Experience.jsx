@@ -42,7 +42,7 @@ const ExperienceCard = ({ experience }) => (
 )
 
 const Experience = () => {
-  const [tabIndex, setTabIndex] = useState(0);
+  const [tabIndex, setTabIndex] = useState(1);
 
   const handleTabChange = (event, newValue) => {
     setTabIndex(newValue);
@@ -70,14 +70,11 @@ const Experience = () => {
       }}
 
       textColor="#D7F4FF"
-      // indicatorColor="#D7F4FF"
-      
-
-
     >
       <Tab label="All" />
       <Tab label="Work" />
       <Tab label="Education" />
+      <Tab label="Leadership" />
     </Tabs>
 
     </motion.div>

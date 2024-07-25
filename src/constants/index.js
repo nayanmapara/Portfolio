@@ -49,6 +49,9 @@ import {
     cms,
     Payal,
     Tejas,
+    headstarter,
+    northernwhisper,
+    UoH,
   } from "../assets";
   
   export const navLinks = [
@@ -255,38 +258,27 @@ import {
   
   const experiences = [
     {
-      title: "Honours Bachelor of Computer Science (Specialty in Cloud Computing)",
-      company_name: "Sheridan College",
-      icon: sheridancollege,
-      iconBg: "#193a67",
-      date: "Sep 2024 - Apr 2027",
+      title: "Software Engineering Fellow",
+      company_name: "Headstarter AI",
+      icon: headstarter,
+      iconBg: "#121211", 
+      date: "July - August 2024",
       points: [
-        "Cloud Solutions Specialist: Analyzes, strategies, designs, and executes computer systems and cloud solutions.","Specializes in AWS and Azure for scalable and efficient cloud architectures.",
+        "Ongoing training in software engineering, data structures, and algorithms, with a focus on Python, Next.js, and React.js.",
+        "Being coached by Amazon, Bloomberg, and Capital One engineers on Agile, CI/CD, Git, and microservice patterns."
       ],
-      type: 2,
+      type: 1,
     },
     {
-      title: "Computer Programming Diploma",
-      company_name: "Sheridan College",
-      icon: sheridancollege,
-      iconBg: "#193a67",
-      date: "Jan 2023 - Apr 2024",
+      title: "Co-Founder & Software Developer",
+      company_name: "Northern Whisper",
+      icon: northernwhisper,
+      iconBg: "#121211",
+      date: "May 2024 - Present",
       points: [
-        "Full-stack Expertise: Proficient in Java, C, and C# for robust software and networking. Skilled in Spring Boot, PHP, and Angular, ensuring comprehensive full-stack development.",
-        "Agile Project Management: Experience in Agile and Waterfall methodologies. Efficiently uses Jira for project management, ensuring adaptability to evolving software development lifecycles.",
-        "Collaborative Problem-solver: Adept at using tools like Jira for collaborative problem-solving.",
-      ],
-      type: 2,
-    },
-    {
-      title: "Student Leader",
-      company_name: "Postman",
-      icon: postman,
-      iconBg: "#E6DEDD",
-      date: "May 2022 - Dec 2023",
-      points: [
-        "Facilitating educational workshops to demystify APIs, providing students with the skills to create resilient and innovative software solutions.",
-        "Conducting informative sessions on API intricacies, empowering students to master the art of leveraging APIs in software development.",
+        "Orchestrated the launch of the Northern Whisper newsletter waitlist, achieved 1,200 LinkedIn impressions within 24 hours and converting 28.1% of engagements into subscribers.",
+        "Designed and maintained a CI/CD pipeline with GitOps and Vercel, reducing deployment time by 40% and automating deployments to enhance DevOps efficiency.",
+        "Spearheaded project management using Notion and Agile, optimizing workflows, conducting bi-weekly sprints, and delivering updates; boosted team productivity by 40% and reduced project delivery times by 25%."
       ],
       type: 1,
     },
@@ -299,11 +291,59 @@ import {
       points: [
         "Proficient in developing custom websites and software solutions tailored to client specifications.",
         "Expertise in the complete web dev lifecycle, from conceptualization to deployment.",
-        "Skillful execution of client-centric digital marketing strategies to attract and acquire new clients.",
+        "Skillful execution of client-centric digital marketing strategies to attract and acquire new clients."
       ],
       type: 1,
     },
-  ];
+    {
+      title: "Student Leader",
+      company_name: "Postman",
+      icon: postman,
+      iconBg: "#E6DEDD",
+      date: "May 2022 - Dec 2023",
+      points: [
+        "Facilitating educational workshops to demystify APIs, providing students with the skills to create resilient and innovative software solutions.",
+        "Conducting informative sessions on API intricacies, empowering students to master the art of leveraging APIs in software development."
+      ],
+      type: 3,
+    },
+    {
+      title: "Workshop Leader",
+      company_name: "University of Hyderabad",
+      icon: UoH,
+      iconBg: "#E6DEDD",
+      date: "Mar 2024",
+      points: [
+        "Led a web development workshop for 30+ students, delivering hands-on training in HTML, CSS, and JavaScript fundamentals, achieving a 4.7 out of 5 rating for clear explanations and effective teaching methods."
+      ],
+      type: 3,
+    },
+    {
+      title: "Honours Bachelor of Computer Science (Specialty in Cloud Computing)",
+      company_name: "Sheridan College",
+      icon: sheridancollege,
+      iconBg: "#193a67",
+      date: "Sep 2024 - Apr 2027",
+      points: [
+        "Cloud Solutions Specialist: Analyzes, strategizes, designs, and executes computer systems and cloud solutions.",
+        "Specializes in AWS and Azure for scalable and efficient cloud architectures."
+      ],
+      type: 2,
+    },
+    {
+      title: "Computer Programming Diploma",
+      company_name: "Sheridan College",
+      icon: sheridancollege,
+      iconBg: "#193a67",
+      date: "Jan 2023 - Apr 2024",
+      points: [
+        "Full-stack Expertise: Proficient in Java, C, and C# for robust software and networking. Skilled in Spring Boot, PHP, and Angular, ensuring comprehensive full-stack development.",
+        "Agile Project Management: Experience in Agile and Waterfall methodologies. Efficiently uses Jira for project management, ensuring adaptability to evolving software development lifecycles.",
+        "Collaborative Problem-solver: Adept at using tools like Jira for collaborative problem-solving."
+      ],
+      type: 2,
+    }
+  ];  
   
   const testimonials = [
     {

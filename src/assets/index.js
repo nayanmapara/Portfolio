@@ -55,6 +55,9 @@ import freelance from "./company/freelance.png";
 import postman from "./company/postman.png";
 import sheridancollege from "./company/sheridancollege.png";
 import qmark from "./company/qmark.png";
+import northernwhisper from "./company/northernwhisper.png";
+import UoH from "./company/UoH.png";
+import headstarter from "./company/headstarter.png";
 
 // Projects
 import tastypython from "./projects/tastypython.png";
@@ -118,6 +121,9 @@ export {
   microservices,
   prototyping,
   cms,
+  northernwhisper,
+  UoH,
+  headstarter,
 
   Payal,
   Tejas,
