@@ -1,12 +1,19 @@
 import { BrowserRouter } from 'react-router-dom';
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Tech, Works } from './components';
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Tech, Works, useLocation } from './components';
 import AddedContacts from './components/AddedContacts';
 
 import CustomCursor from './components/CustomCursor';
 import { SpeedDial } from '@mui/material';
 
+import { trackPageView } from './utils/ga4';
+
 const App = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    trackPageView(location.pathname);
+  }, [location]);
 
   return (
     <BrowserRouter>
