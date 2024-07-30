@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks, socialLinks } from '../constants';
@@ -19,12 +19,9 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-12 h-12 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            <span className="sm:block hidden">Nayan &nbsp;Mapara</span>
-          </p>
-          
+          <img src={logo} alt="logo" className="w-14 h-14 object-contain" />
         </Link>
+
         <div className="sm:flex items-center gap-4">
           <ul className="list-none hidden sm:flex flex-row gap-10">
             {navLinks.map((link) => (
@@ -39,6 +36,13 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+
+          <button
+            onClick={() => window.open('https://resume.nayanm.me', '_blank')}
+            className="hidden sm:block border-2 border-cyan-300 text-secondary font-medium py-2 px-4 rounded-md hover:bg-tertiary hover:text-cyan-100 hover:border-cyan-100 focus:outline-none"
+          >
+            Resume
+          </button>
 
           <img 
             src={toggle ? close : menu} 
@@ -86,7 +90,7 @@ const Navbar = () => {
                       </React.Fragment>
                     ))}
                   </ul>
-                  </div>
+                </div>
               </div>
           </div>
         </div>
