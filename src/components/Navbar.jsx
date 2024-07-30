@@ -38,7 +38,7 @@ const Navbar = () => {
           </ul>
 
           <button
-            onClick={() => window.open('https://resume.nayanm.me', '_blank')}
+            onClick={() => window.open('/Nayan-Mapara-Resume.pdf', '_blank')}
             className="hidden sm:block border-2 border-cyan-300 text-secondary font-medium py-2 px-4 rounded-md hover:bg-tertiary hover:text-cyan-100 hover:border-cyan-100 focus:outline-none"
           >
             Resume
