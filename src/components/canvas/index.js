@@ -1,5 +1,5 @@
 import ArcReactorCanvas from "./ArcReactor";
-import ComputersCanvas from "./Computers";
 import StarsCanvas from "./Stars";
+import WorkshopCanvas from "./Workshop";
 
-export { ArcReactorCanvas, ComputersCanvas, StarsCanvas };
+export { ArcReactorCanvas, StarsCanvas, WorkshopCanvas };
