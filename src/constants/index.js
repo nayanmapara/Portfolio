@@ -94,7 +94,7 @@ import {
     },
     {
       name: "instagram",
-      url: "https://www.instagram.com/nayanmapara/",
+      url: "https://www.instagram.com/ydkm404/",
       icon: instagram,
     },
   ];
