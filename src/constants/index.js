@@ -105,7 +105,7 @@ import {
       icon: cloud,
     },
     {
-      title: "Headstarter AI Fellow",
+      title: "SWE Fellow at Headstarter AI",
       icon: headstarter,
     },
     {
