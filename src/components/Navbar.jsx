@@ -1,102 +1,108 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { styles } from '../styles';
-import { navLinks, socialLinks } from '../constants';
+import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
+import { cyan } from '@mui/material/colors';
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+  const [navBg, setNavBg] = useState(false);
+
+  useEffect(() => {
+    const changeNavBg = () => {
+      if (window.scrollY >= 80) {
+        setNavBg(true);
+      } else {
+        setNavBg(false);
+      }
+    };
+    window.addEventListener('scroll', changeNavBg);
+    return () => window.removeEventListener('scroll', changeNavBg);
+  }, []);
 
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center py-05 fixed top-0 z-20 bg-primary`}>
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+    <nav className="fixed w-full z-20 top-4 flex justify-center">
+      <div 
+        className={`${
+          navBg ? 'bg-primary/80' : 'bg-primary/50'
+        } transition-all duration-300 backdrop-blur-lg shadow-lg flex justify-between items-center w-[90%] sm:w-[85%] md:w-[70%] py-3 px-6 rounded-full`}
+        style={{
+          border: '1px solid cyan', // Solid cyan border
+          background: navBg ? '#000' : 'rgba(0, 0, 0, 0.5)', // Adjust background if needed
+        }}
+      >
+        {/* Logo */}
         <Link 
-          to="/"
-          className="flex items-center gap-2"
+          to="/" 
+          className="flex items-center gap-3" 
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-14 h-14 object-contain" />
+          <img src={logo} alt="logo" className="w-10 h-10 object-contain" />
+          <span className="text-white text-lg font-bold">Nayan Mapara</span>
         </Link>
 
-        <div className="sm:flex items-center gap-4">
-          <ul className="list-none hidden sm:flex flex-row gap-10">
+        {/* Desktop Links */}
+        <ul className="hidden sm:flex gap-8 items-center">
+          {navLinks.map((link) => (
+            <li
+              key={link.id}
+              className={`text-md font-medium cursor-pointer transition-all duration-200 ${
+                active === link.title ? "text-cyan-300" : "text-secondary"
+              } hover:text-cyan-300`}
+              onClick={() => setActive(link.title)}
+            >
+              <a href={`#${link.id}`}>{link.title}</a>
+            </li>
+          ))}
+        </ul>
+
+        {/* Resume Button */}
+        <button
+          onClick={() => window.open('/Nayan-Mapara-Resume.pdf', '_blank')}
+          className="hidden sm:block bg-cyan-300 text-primary font-semibold py-2 px-4 rounded-full hover:bg-cyan-400 transition-all duration-300 focus:outline-none"
+        >
+          Resume
+        </button>
+
+        {/* Mobile Menu Icon */}
+        <div className="sm:hidden flex items-center">
+          <img 
+            src={toggle ? close : menu} 
+            alt="menu" 
+            className="w-6 h-6 object-contain cursor-pointer"
+            onClick={() => setToggle(!toggle)} 
+          />
+        </div>
+        
+        {/* Mobile Menu */}
+        <div 
+          className={`${toggle ? 'flex' : 'hidden'} p-10 absolute top-16 left-1/2 transform -translate-x-1/2 mx-4 my-4 z-10 rounded-lg bg-black/90 backdrop-blur-md`} 
+          style={{ borderRadius: '10px' }}
+        >
+          <ul className="flex flex-col gap-4 align">
             {navLinks.map((link) => (
               <li
                 key={link.id}
-                className={`${
-                  active === link.title ? "text-white" : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
-                onClick={() => setActive(link.title)}
+                className={`text-[20px] text-center font-medium cursor-pointer ${
+                  active === link.title ? "text-cyan-300" : "text-white"
+                } hover:text-cyan-300 transition-all duration-200`}
+                onClick={() => {
+                  setToggle(false);
+                  setActive(link.title);
+                }}
               >
                 <a href={`#${link.id}`}>{link.title}</a>
               </li>
             ))}
           </ul>
-
-          <button
-            onClick={() => window.open('/Nayan-Mapara-Resume.pdf', '_blank')}
-            className="hidden sm:block border-2 border-cyan-300 text-secondary font-medium py-2 px-4 rounded-md hover:bg-tertiary hover:text-cyan-100 hover:border-cyan-100 focus:outline-none"
-          >
-            Resume
-          </button>
-
-          <img 
-            src={toggle ? close : menu} 
-            alt="menu" 
-            className="w-[28px] h-[28px] object-contain cursor-pointer sm:hidden" 
-            onClick={() => setToggle(!toggle)}
-          />
-
-          <div className={`${!toggle ? 'hidden' : 'flex'}
-            p-6 black-gradient absolute top-20 right-0 mx-4 my-2
-            min-w-[240px] z-10 rounded-xl border-2 border-cyan-500`}>
-              
-              <div className="flex flex-col">
-                <div>
-                  <ul className="list-none flex items-start flex-col gap-4">
-                    {navLinks.map((link) => (
-                      <li
-                        key={link.id}
-                        className={`${
-                          active === link.title ? "text-white" : "text-secondary"
-                        } font-poppins text-[16px] font-medium cursor-pointer`}
-                        onClick={() => {
-                          setToggle(!toggle);
-                          setActive(link.title);
-                        }}
-                      >
-                        <a href={`#${link.id}`}>{link.title}</a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              
-                <div className="mt-5">
-                  <ul className="list-none flex items-start flex-row gap-3">
-                    {socialLinks.map((socialLink, index) => (
-                      <React.Fragment key={socialLink.name}>
-                        <li className="flex items-center">
-                          <a href={socialLink.url} className="text-white hover:text-secondary">
-                            <img src={socialLink.icon} alt={socialLink.name} className="w-6 h-6" />
-                          </a>
-                        </li>
-                        {index < socialLinks.length - 1 && (
-                          <li className="text-white">|</li>
-                        )}
-                      </React.Fragment>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-          </div>
         </div>
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
