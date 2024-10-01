@@ -59,44 +59,38 @@ const Hero = () => {
               className='w-3 h-3 rounded-full bg-secondary mb-1'
             />
           </div> */}
-
           
-<div className="relative w-[80px] h-[80px] flex justify-center items-center cursor-pointer">
-  <motion.div
-    animate={{ y: [0, -15, 0, -10, 0] }}
-    transition={{
-      duration: 2,
-      repeat: Infinity,
-      ease: "easeInOut",
-    }}
-    className="absolute w-[30px] h-[10px] bg-teal-400 rounded-full"
-  />
-  
-  <motion.div
-    animate={{ y: [0, -10, 0, -15, 0] }}
-    transition={{
-      duration: 1.8,
-      repeat: Infinity,
-      ease: "easeInOut",
-    }}
-    className="absolute w-[25px] h-[10px] bg-orange-400 rounded-full top-4"
-  />
+        <div className="relative w-[80px] h-[80px] flex justify-center items-center cursor-pointer">
+          <motion.div
+            animate={{ y: [0, -15, 0, -10, 0] }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="absolute w-[30px] h-[10px] bg-teal-400 rounded-full"
+          />
+          
+          <motion.div
+            animate={{ y: [0, -10, 0, -15, 0] }}
+            transition={{
+              duration: 1.8,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="absolute w-[25px] h-[10px] bg-orange-400 rounded-full top-4"
+          />
 
-  <motion.div
-    animate={{ y: [0, -5, 0, -20, 0] }}
-    transition={{
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut",
-    }}
-    className="absolute w-[20px] h-[10px] bg-pink-400 rounded-full top-8"
-  />
-</div>
-
-
-
-
-
+          <motion.div
+            animate={{ y: [0, -5, 0, -20, 0] }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="absolute w-[20px] h-[10px] bg-pink-400 rounded-full top-8"
+          />
+        </div>
 
         </a>
       </div>
