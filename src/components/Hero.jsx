@@ -14,10 +14,22 @@ const Hero = () => {
             <WorkshopCanvas />
         </div>
 
-        <div className="relative flex flex-col justify-center items-center mt-5">
+        {/* <div className="relative flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#0feffd]"/>
           <div className="w-1 sm:h-80 h-40 teal-gradient"/>
+        </div> */}
+
+
+        <div className="relative flex flex-col justify-center items-center">
+          {/* Bracket Bubble */}
+          <div className="w-10 h-10 bg-cyan-300 rounded-lg flex justify-center items-center">
+            <span className="text-black font-mono text-xl">{'</>'}</span>
+          </div>
+
+          {/* Code Block Line */}
+          <div className="w-1 sm:h-80 h-40 bg-cyan-300" style={{ boxShadow: '0 0 10px #292929' }} />
         </div>
+
         <div>
           <div className='absolute flex flex-col items-start'>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}> Welcome to my portfolio!</p>
@@ -34,16 +46,8 @@ const Hero = () => {
                 />
               </span>
             </h1>
-
-            
           </div>
-
-                
-
         </div>
-
-        
-
       </div>
 
       <div className="absolute xs:bottom-10 bottom-10 w-full flex justify-center items-center">
@@ -91,7 +95,6 @@ const Hero = () => {
             className="absolute w-[20px] h-[10px] bg-pink-400 rounded-full top-8"
           />
         </div>
-
         </a>
       </div>
     </section>
