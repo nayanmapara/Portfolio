@@ -105,11 +105,11 @@ import {
       icon: cloud,
     },
     {
-      title: "SWE Fellow at Headstarter AI",
+      title: "Prev SWE Fellow",
       icon: headstarter,
     },
     {
-      title: "1x Hackathon Winner",
+      title: "2x Hackathon Winner",
       icon: web,
     },
     {
@@ -268,8 +268,8 @@ import {
       iconBg: "#121211", 
       date: "July - August 2024",
       points: [
-        "Ongoing training in software engineering, data structures, and algorithms, with a focus on Python, Next.js, and React.js.",
-        "Being coached by Amazon, Bloomberg, and Capital One engineers on Agile, CI/CD, Git, and microservice patterns."
+        "Engineered AI applications with Next.js, OpenAI, Pinecone, and Stripe, supporting over 1,000 users.",
+        "Led full-cycle development from design to deployment, mentoring 4+ fellows while using MVC patterns and Agile.","Leveraged AWS (EC2, S3, Lambda, SageMaker) for scalable cloud infrastructure, ensuring reliable AI deployments."
       ],
       type: 1,
     },
@@ -372,6 +372,28 @@ import {
   
   const projects = [
     {
+      "name": "Northern Whisper",
+      "description":
+        "Northern Whisper is an initiative dedicated to providing timely, accurate, and vital information to international students and work permit holders in Canada. This platform streamlines access to critical updates on immigration, policy changes, and other important topics.",
+      "tags": [
+        {
+          "name": "python",
+          "color": "blue-text-gradient"
+        },
+        {
+          "name": "next.js",
+          "color": "green-text-gradient"
+        },
+        {
+          "name": "web-scraping",
+          "color": "pink-text-gradient"
+        }
+      ],
+      "image": whisperbackend,
+      "source_code_link": "https://github.com/nayanmapara/NorthernWhisper",
+      "demo_code_link": "https://northernwhisper.tech"
+    },    
+    {
       name: "SignEase (Winner at DeerHacks III)",
       description:
         "A dynamic web app for mastering sign language, using Python-based Hand Detection, Mediapipe for accurate tracking, and Three.js for 3D visualization. It features a MongoDB and Flask backend for storing search histories and coordinate data for 3D hand animations.",
@@ -394,28 +416,6 @@ import {
       demo_code_link: "https://devpost.com/software/signease-dmx6er",
     },
     {
-      name: "WhisperBackend",
-      description:
-        "Developed a scalable backend service for web scraping and user subscription management using Python, Flask, and MongoDB. Containerized with Docker and deployed on Vercel, this project ensures efficient handling of large volumes of data.",
-      tags: [
-        {
-          name: "python",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "flask",
-          color: "green-text-gradient",
-        },
-        {
-          name: "docker",
-          color: "orange-text-gradient",
-        },
-      ],
-      image: whisperbackend,
-      source_code_link: "https://github.com/nayanmapara/WhisperBackend",
-      demo_code_link: "https://github.com/nayanmapara/WhisperBackend",
-    },
-    {
       name: "Drive Sync - Car Rating App",
       description:
         "The Drive Sync project aims to create a Car Rating App enabling users to review and rate cars from 2023 and beyond. The application offers users the ability to browse and access detailed information about various car models, including ratings, prices, and specifications.",
@@ -436,73 +436,7 @@ import {
       image: drivesync,
       source_code_link: "https://github.com/nayanmapara/DriveSync",
       demo_code_link: "https://github.com/nayanmapara/DriveSync",
-    },
-    {
-      name: "TastyPython",
-      description:
-        "Embark on a flavorful Python programming adventure with TastyPython.tech, a dynamic website crafted using WordPress and PHP. This platform delivers an immersive learning experience for aspiring Python enthusiasts.",
-      tags: [
-        {
-          name: "wordpress",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "php",
-          color: "green-text-gradient",
-        },
-        {
-          name: "cms",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tastypython,
-      source_code_link: "https://tastypython.tech/",
-      demo_code_link: "https://tastypython.tech/",
-    },
-    {
-      name: "PhishBuster",
-      description:
-        "Created a user-friendly Phishing Detection Tool with a custom PhishBuster API integration for tailored solutions. Demonstrated full-stack proficiency using Python, Web Development, MySQL, Docker, Flask, and deployed on Heroku.",
-      tags: [
-        {
-          name: "python",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "flask",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-      ],
-      image: phishbuster,
-      source_code_link: "https://github.com/nayanmapara/PhishBuster",
-      demo_code_link: "https://github.com/nayanmapara/PhishBuster?tab=readme-ov-file#sites",
-    },
-    {
-      name: "Squad! - Building Bridges for Newcomers",
-      description:
-        "Squad! emerges as an intuitive iOS app, specifically cultivated for newcomers in Canada, focusing on their crucial initial five years – a period akin to the rooting phase in a new environment.",
-      tags: [
-        {
-          name: "swift",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "python",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        }
-      ],
-      image: squad,
-      source_code_link: "https://devpost.com/software/squad-building-bridges-for-newcomers",
-      demo_code_link: "https://devpost.com/software/squad-building-bridges-for-newcomers",
-    },
+    }
   ];
 
   
