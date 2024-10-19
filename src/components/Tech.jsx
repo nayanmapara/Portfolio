@@ -14,6 +14,7 @@ const Tech = () => {
     return techArray.map((technology) => (
       <motion.div variants={fadeIn("top", "spring", 0.25, 1.25)}>
       <Button 
+      disabled
       key={technology.name} 
       variant="outlined" 
       style=
@@ -32,7 +33,7 @@ const Tech = () => {
   };
 
   const accordionStyle = {
-    backgroundColor: '#004e6a',
+    backgroundColor: '#0c1b2c',
     color: '#D7F4FF',
     fontWeight: 'bold',
     border: '2px solid #D7F4FF',

@@ -9,7 +9,7 @@ import { SectionWrapper } from '../hoc';
 
 const AddedContacts = () => {
   return (
-    <div className={`${styles.padding} bg-black-100 rounded-2xl min-h-[300px]`}>
+    <div className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}>
       <div className="flex flex-col md:flex-row mt-8 gap-4">
 
         <motion.div variants={textVariant()}>
@@ -21,7 +21,7 @@ const AddedContacts = () => {
         <div className="flex flex-col md:flex-row justify-center mt-8 gap-4">
 
         {/* Socials Box */}
-        <motion.div className="bg-black-300 p-8 rounded-xl w-full md:w-1/3">
+        <motion.div className="bg-primary p-8 rounded-xl w-full md:w-1/3">
           <h2 className="text-white tracking-wider font-black text-4xl mb-4">Socials</h2>
           <div className="mt-5">
             <ul className="list-none flex items-start flex-row gap-3">
@@ -40,7 +40,7 @@ const AddedContacts = () => {
         </motion.div>
 
         {/* Emails Box */}
-        <motion.div className="bg-black-300 p-8 rounded-xl w-full md:w-1/3 mt-4 md:mt-0">
+        <motion.div className="bg-primary p-8 rounded-xl w-full md:w-1/3 mt-4 md:mt-0">
           <h2 className="text-white tracking-wider font-black text-4xl mb-4">Email</h2>
           <div>
             <p><a href='mailto:hello@nayanm.me' className='text-secondary'>hello@nayanm.me</a></p>
@@ -48,7 +48,7 @@ const AddedContacts = () => {
         </motion.div>
 
         {/* Address Box */}
-        <motion.div className="bg-black-300 p-8 rounded-xl w-full md:w-1/3 mt-4 md:mt-0">
+        <motion.div className="bg-primary p-8 rounded-xl w-full md:w-1/3 mt-4 md:mt-0">
           <h2 className="text-white tracking-wider font-black text-4xl mb-4">Address</h2>
           <p>Oakville, Ontario, Canada</p>
         </motion.div>
