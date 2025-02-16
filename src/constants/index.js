@@ -55,6 +55,7 @@ import {
     drivesync,
     whisperbackend,
     squad,
+    geeselovemerch,
   } from "../assets";
   
   export const navLinks = [
@@ -109,7 +110,7 @@ import {
       icon: headstarter,
     },
     {
-      title: "2x Hackathon Winner",
+      title: "3x Hackathon Winner",
       icon: web,
     },
     {
@@ -274,32 +275,6 @@ import {
       type: 1,
     },
     {
-      title: "Co-Founder & Software Developer",
-      company_name: "Northern Whisper",
-      icon: northernwhisper,
-      iconBg: "#121211",
-      date: "May 2024 - Present",
-      points: [
-        "Orchestrated the launch of the Northern Whisper newsletter waitlist, achieved 1,200 LinkedIn impressions within 24 hours and converting 28.1% of engagements into subscribers.",
-        "Designed and maintained a CI/CD pipeline with GitOps and Vercel, reducing deployment time by 40% and automating deployments to enhance DevOps efficiency.",
-        "Spearheaded project management using Notion and Agile, optimizing workflows, conducting bi-weekly sprints, and delivering updates; boosted team productivity by 40% and reduced project delivery times by 25%."
-      ],
-      type: 1,
-    },
-    {
-      title: "Full-Stack Developer",
-      company_name: "Freelance",
-      icon: freelance,
-      iconBg: "#E6DEDD",
-      date: "Mar 2021 - Present",
-      points: [
-        "Proficient in developing custom websites and software solutions tailored to client specifications.",
-        "Expertise in the complete web dev lifecycle, from conceptualization to deployment.",
-        "Skillful execution of client-centric digital marketing strategies to attract and acquire new clients."
-      ],
-      type: 1,
-    },
-    {
       title: "Student Leader",
       company_name: "Postman",
       icon: postman,
@@ -372,26 +347,26 @@ import {
   
   const projects = [
     {
-      "name": "Northern Whisper",
+      "name": "Geese Love Merch (Winner at Hack the North 2024)",
       "description":
-        "Northern Whisper is an initiative dedicated to providing timely, accurate, and vital information to international students and work permit holders in Canada. This platform streamlines access to critical updates on immigration, policy changes, and other important topics.",
+        "Geese Love Merch is set in the legendary Lazarus Hall, starring our main character—the iconic goose on wheels (yes, it's as awesome as it sounds). The game’s objective? Fire merch at sponsors that pop up in the seats every 6 seconds. The more sponsors you hit, the closer you get to securing your dream internship—the ultimate prize!",
       "tags": [
         {
-          "name": "python",
+          "name": "C#",
           "color": "blue-text-gradient"
         },
         {
-          "name": "next.js",
+          "name": "Unity",
           "color": "green-text-gradient"
         },
         {
-          "name": "web-scraping",
+          "name": "3d Game Development",
           "color": "pink-text-gradient"
         }
       ],
-      "image": whisperbackend,
-      "source_code_link": "https://github.com/nayanmapara/NorthernWhisper",
-      "demo_code_link": "https://northernwhisper.tech"
+      "image": geeselovemerch,
+      "source_code_link": "https://github.com/nayanmapara/GeeseLoveMerch",
+      "demo_code_link": "https://devpost.com/software/gesse-love-merch"
     },    
     {
       name: "SignEase (Winner at DeerHacks III)",

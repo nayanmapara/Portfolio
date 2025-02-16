@@ -57,4 +57,4 @@ const AddedContacts = () => {
   );
 };
 
-export default SectionWrapper(AddedContacts, "");
+export default SectionWrapper(AddedContacts, "contact");

@@ -66,6 +66,7 @@ import signease from "./projects/signease.png";
 import squad from "./projects/squad.png";
 import whisperbackend from "./projects/whisperbackend.png";
 import drivesync from "./projects/drivesync.png";
+import geeselovemerch from "./projects/geeselovemerch.png";
 
 // Profile Images
 import Payal from "./profile/Payal_Lenka.jpg";
@@ -130,7 +131,7 @@ export {
   northernwhisper,
   UoH,
   headstarter,
-
+  geeselovemerch,
   Payal,
   Tejas,
 };
