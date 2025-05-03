@@ -255,10 +255,10 @@ import {
     name: "UI Prototyping",
     icon: prototyping
   },
-  {
-    name: "CMS (WordPress, Wix)",
-    icon: cms
-  }
+  // {
+  //   name: "CMS (WordPress, Wix)",
+  //   icon: cms
+  // }
   ]
   
   const experiences = [
