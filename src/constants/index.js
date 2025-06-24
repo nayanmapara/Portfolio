@@ -95,7 +95,7 @@ import {
     },
     {
       name: "instagram",
-      url: "https://www.instagram.com/ydkm404/",
+      url: "https://www.instagram.com/grep.me.not/",
       icon: instagram,
     },
   ];
