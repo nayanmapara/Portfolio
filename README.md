@@ -1,6 +1,6 @@
 # Nayan's Portfolio Website
 
-Welcome to my portfolio website, [nayanm.me](https://nayanm.me)! This is a showcase of my skills, projects, and experiences. Feel free to explore and get to know more about me.
+Welcome to my portfolio website, [NayanM.me](https://nayanm.me)! This is a showcase of my skills, projects, and experiences. Feel free to explore and get to know more about me.
 
 ## Technologies Used
 
